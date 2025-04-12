@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jogo da Memória</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="img/banana.webp" type="webp" />
+  </head>
+  <body>
+    <div class="container">
+      <p>Tempo: <span class="timer">0</span></p>
+      <div class="reload">
+        <img
+          onclick="location.reload()"
+          src="img/reload.png"
+          alt=""
+          srcset=""
+        />
+      </div>
+      <div class="grid">
+        <div class="card">
+          <div data-card="8" class="card-front">
+            <img src="img/1.jpg" alt="foto1" srcset="" />
+          </div>
+          <div onclick="virar(this)" class="card-back">
+            <img src="img/banana.webp" alt="banana" srcset="" />
+          </div>
+        </div>
+        <div class="card">
+          <div data-card="3" class="card-front">
+            <img src="img/5.jpg" alt="foto1" srcset="" />
+          </div>
+          <div onclick="virar(this)" class="card-back">
+            <img src="img/banana.webp" alt="banana" srcset="" />
+          </div>
+        </div>
+        <div class="card">
+          <div data-card="1" class="card-front">
+            <img src="img/2.jpg" alt="foto1" srcset="" />
+          </div>
+          <div onclick="virar(this)" class="card-back">
+            <img src="img/banana.webp" alt="banana" srcset="" />
+          </div>
+        </div>
+        <div class="card">
+          <div data-card="8" class="card-front">
+            <img src="img/1.jpg" alt="foto1" srcset="" />
+          </div>
+          <div onclick="virar(this)" class="card-back">
+            <img src="img/banana.webp" alt="banana" srcset="" />
+          </div>
+        </div>
+        <div class="card">
+          <div data-card="7" class="card-front">
+            <img src="img/4.jpg" alt="foto1" srcset="" />
+          </div>
+          <div onclick="virar(this)" class="card-back">
+            <img src="img/banana.webp" alt="banana" srcset="" />
+          </div>
+        </div>
+        <div class="card">
+          <div data-card="6" class="card-front">
+            <img src="img/7.jpg" alt="foto1" srcset="" />
+          </div>
+          <div onclick="virar(this)" class="card-back">
+            <img src="img/banana.webp" alt="banana" srcset="" />
+          </div>
+        </div>
+        <div class="card">
+          <div data-card="7" class="card-front">
+            <img src="img/4.jpg" alt="foto1" srcset="" />
+          </div>
+          <div onclick="virar(this)" class="card-back">
+            <img src="img/banana.webp" alt="banana" srcset="" />
+          </div>
+        </div>
+        <div class="card">
+          <div data-card="2" class="card-front">
+            <img src="img/3.jpg" alt="foto1" srcset="" />
+          </div>
+          <div onclick="virar(this)" class="card-back">
+            <img src="img/banana.webp" alt="banana" srcset="" />
+          </div>
+        </div>
+        <div class="card">
+          <div data-card="6" class="card-front">
+            <img src="img/7.jpg" alt="foto1" srcset="" />
+          </div>
+          <div onclick="virar(this)" class="card-back">
+            <img src="img/banana.webp" alt="banana" srcset="" />
+          </div>
+        </div>
+        <div class="card">
+          <div data-card="4" class="card-front">
+            <img src="img/6.jpg" alt="foto1" srcset="" />
+          </div>
+          <div onclick="virar(this)" class="card-back">
+            <img src="img/banana.webp" alt="banana" srcset="" />
+          </div>
+        </div>
+        <div class="card">
+          <div data-card="5" class="card-front">
+            <img src="img/8.jpg" alt="foto1" srcset="" />
+          </div>
+          <div onclick="virar(this)" class="card-back">
+            <img src="img/banana.webp" alt="banana" srcset="" />
+          </div>
+        </div>
+        <div class="card">
+          <div data-card="3" class="card-front">
+            <img src="img/5.jpg" alt="foto1" srcset="" />
+          </div>
+          <div onclick="virar(this)" class="card-back">
+            <img src="img/banana.webp" alt="banana" srcset="" />
+          </div>
+        </div>
+        <div class="card">
+          <div data-card="4" class="card-front">
+            <img src="img/6.jpg" alt="foto1" srcset="" />
+          </div>
+          <div onclick="virar(this)" class="card-back">
+            <img src="img/banana.webp" alt="banana" srcset="" />
+          </div>
+        </div>
+        <div class="card">
+          <div data-card="1" class="card-front">
+            <img src="img/2.jpg" alt="foto1" srcset="" />
+          </div>
+          <div onclick="virar(this)" class="card-back">
+            <img src="img/banana.webp" alt="banana" srcset="" />
+          </div>
+        </div>
+        <div class="card">
+          <div data-card="2" class="card-front">
+            <img src="img/3.jpg" alt="foto1" srcset="" />
+          </div>
+          <div onclick="virar(this)" class="card-back">
+            <img src="img/banana.webp" alt="banana" srcset="" />
+          </div>
+        </div>
+        <div class="card">
+          <div data-card="5" class="card-front">
+            <img src="img/8.jpg" alt="foto1" srcset="" />
+          </div>
+          <div onclick="virar(this)" class="card-back">
+            <img src="img/banana.webp" alt="banana" srcset="" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+
+<script src="script.js"></script>

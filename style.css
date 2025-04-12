@@ -1,0 +1,119 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url(img/background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 18px;
+}
+
+.card {
+    height: 170px;
+    width: 100px;
+}
+
+.card-front {
+    height: 100%;
+    width: 100%;
+    line-height: 170px;
+    text-align: center;
+    font-size: 32px;
+    border-radius: 8px;
+    display: none;
+    justify-content: center;
+    border: white, solid, 5px;
+    align-items: center;
+}
+
+.card-front img {
+    height: 100%;
+    width: 100%;
+}
+
+.img {
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 255, 0.226);
+    line-height: 170px;
+    text-align: center;
+    font-size: 32px;
+    border-radius: 8px;
+    display: none;
+}
+
+.card-back {
+    border-radius: 8px;
+    border: solid, white, 5px;
+    height: 100%;
+    width: 100%;
+    background-image: linear-gradient(to bottom, #47B300, #378A00);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-back img {
+    width: 90px;
+    height: 90px;
+}
+
+.virada {
+    display: flex;
+}
+
+
+.card-back:hover {
+    cursor: pointer;
+    transform: scale(1.02);
+}
+
+.card-front:hover {
+    cursor: pointer;
+    transform: scale(1.02)
+}
+
+p {
+    font-size: 18px;
+    color:white;
+    font-weight: bold;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+}
+
+.reload{
+    position: absolute;
+    margin: 0 auto;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    animation: spin .9s linear infinite;
+}
+
+.reload img{
+    width: 50px;
+    height: 50px;
+}
+
+.reload img:hover {
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+@keyframes spin {
+    0% {transform: rotate(0deg);}
+    100% {transform: rotate(360deg);}
+}
